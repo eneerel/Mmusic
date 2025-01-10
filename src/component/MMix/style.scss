@@ -1,0 +1,27 @@
+.music-mix {
+    display: flex;
+    justify-content: space-between; /* Зургуудын хоорондын зайг тохируулна */
+    gap: 16px; /* Зургуудын хоорондын зай */
+    overflow-x: auto; /* Хэрэв зургууд багтахгүй бол хөндлөн гүйлгэхийг боломжтой болгоно */
+    padding: 10px 0;
+  }
+  
+  .music-mix-item {
+    flex: 0 0 auto; /* Зургуудыг мөрөнд нэг дарааллаар байрлуулах */
+    width: calc(20% - 16px); /* Зургуудын өргөнийг 20% болгоно */
+    max-width: 200px; /* Хэтэрхий өргөн болохоос сэргийлэх */
+    height: auto;
+    text-align: center;
+  }
+  
+  .music-mix-img {
+    width: 100%; /* Зургуудыг контейнер дотор 100% байлгах */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .music-mix-img:hover {
+    transform: scale(1.05);
+  }
+  

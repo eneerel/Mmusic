@@ -1,0 +1,49 @@
+.co-artist {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    overflow-x: auto;
+    padding: 10px 0;
+  }
+  
+  .co-artist-item {
+    flex: 0 0 auto;
+    width: calc(20% - 16px);
+    max-width: 200px;
+    height: auto;
+    text-align: center;
+  }
+  
+  .co-artist-img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .co-artist-img:hover {
+    transform: scale(1.05);
+  }
+ /* Mobile, Tablet болон Desktop-ийн тохиргоо */
+@media (max-width: 1024px) {
+    .music-mix {
+      justify-content: flex-start;
+      overflow-x: auto; /* Хэрэв зургууд багтахгүй бол хажуу тийш гулсана */
+    }
+  
+    .music-mix-item {
+      width: 45%; /* Тавтай зорчих зайг нэмэх */
+      max-width: 150px; /* Хэтэрхий том болохоос сэргийлэх */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .music-mix-item {
+      width: 80%; /* Гар утасны хэмжээний хувьд өргөн */
+      max-width: 150px; /* Зургийн хамгийн их өргөн */
+    }
+    .heading {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  } 

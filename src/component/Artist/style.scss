@@ -1,0 +1,49 @@
+.new-artist {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+  
+    hr {
+      display: block;
+      margin: 20px 0;
+      border: 1px solid #444;
+    }
+  }
+  
+  .artist-list {
+    display: flex; /* Горизонталь шугамд байрлуулах */
+    justify-content: space-between; /* Зайг автоматаар тохируулна */
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+    padding-top: 1rem;
+  }
+  
+  .artist-item {
+    flex: 1; /* Зургийн өргөнийг тэнцүү тохируулна */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .artist-img {
+    width: 100px; /* Зургийн өргөн */
+    height: 100px; /* Зургийн өндөр */
+    object-fit: cover;
+    border-radius: 50%; /* Зургийг бөөрөнхий болгох */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .artist-img:hover {
+    transform: scale(1.1); /* Hover үед зургийг томруулах */
+  }
+  
