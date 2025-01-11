@@ -17,7 +17,7 @@ const FooterPlayer = () => {
       {/* Эхний хэсэг */}
       <div className="player-info">
         <img
-          src={process.env.PUBLIC_URL + "/image/playerphoto.png"} // Default зураг
+          src={process.env.PUBLIC_URL + "/image/playerphoto.png"}
           alt="song thumbnail"
           className="song-image"
         />
@@ -26,14 +26,14 @@ const FooterPlayer = () => {
           <span> Дуучин Д.Пэрэнлэйлхагва</span>
         </div>
           <img
-          src={process.env.PUBLIC_URL + "/image/playerphoto.png"} // Default зураг
+          src={process.env.PUBLIC_URL + "/image/Union.png"}
           alt="song thumbnail"
-          className="song-image"
+          className="song-icon"
         /> 
         <img
-          src={process.env.PUBLIC_URL + "/image/playerphoto.png"} // Default зураг
+          src={process.env.PUBLIC_URL + "/image/hasah.png"}
           alt="song thumbnail"
-          className="song-image"
+          className="song-icon"
         /> 
       </div>
 
@@ -48,26 +48,9 @@ const FooterPlayer = () => {
 
       {/* Гурав дахь хэсэг (Player Options) */}
       <div className="player-options">
-      <div className="volumebar-img">
       <img
-          src={process.env.PUBLIC_URL + "/image/volumebar.png"} // Default зураг
-          alt="song thumbnail"
-          className="song-image"
-        />
-      </div>
-        <button
-          onClick={() => handleButtonClick("playlist")}
-          className="image-button"
-        >
-          <img
-            src={getImageSrc(
-              "playlist",
-              "/image/playlist.png",
-              "/image/playlist.png"
-            )}
-            alt="Playlist"
-          />
-        </button>
+          src={process.env.PUBLIC_URL + "/image/Alter song.png"} 
+          alt="song thumbnail"/> 
       </div>
     </footer>
   );

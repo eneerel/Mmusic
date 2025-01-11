@@ -30,6 +30,9 @@
   border-radius: 5px;
   margin-right: 10px;
 }
+.song-icon{
+  padding-left: 20px;
+}
 .song-title{
   padding-bottom:12px ;
   font-size: 12px;
@@ -65,33 +68,24 @@
 
 .player-options {
   margin-left: 20px;
+  padding-right: 20px;
 }
 
-.player-options button {
-  margin: 0 8px;
-  font-size: 18px;
-  background: none;
-  border: none;
-  color: #fff;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
+// /* Hover effect */
+// .player-options button:hover {
+//   color: #1db954; /* Hover үед өнгө */
+// }
 
-/* Hover effect */
-.player-options button:hover {
-  color: #1db954; /* Hover үед өнгө */
-}
-
-/* Active буюу идэвхтэй төлөв */
-.player-options button.active {
-  color: #1db954; /* Идэвхтэй үед өнгө */
-  font-weight: bold; /* Тодруулна */
-  text-shadow: 0 0 5px rgba(29, 185, 84, 0.8); /* Гэрэлтэх эффект */
-  transform: scale(1.1); /* Томруулна */
-}
-.player-options button.active img {
-  filter: brightness(1.2);
-}
+// /* Active буюу идэвхтэй төлөв */
+// .player-options button.active {
+//   color: #1db954; /* Идэвхтэй үед өнгө */
+//   font-weight: bold; /* Тодруулна */
+//   text-shadow: 0 0 5px rgba(29, 185, 84, 0.8); /* Гэрэлтэх эффект */
+//   transform: scale(1.1); /* Томруулна */
+// }
+// .player-options button.active img {
+//   filter: brightness(1.2);
+// }
 
 @media (max-width: 1024px) {
   .player-info {

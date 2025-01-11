@@ -4,10 +4,11 @@
   left: 0;
   width: 250px;
   height: 100%;
-  background-color:#27272A; // Figma өнгө
+  background-color:#27272A;
   transform: translateX(-100%);
   transition: transform 0.3s ease;
   z-index: 99;
+  padding: 20px;
 
   &.open {
     transform: translateX(0);
@@ -20,9 +21,11 @@
     padding: 15px;
     border-bottom: 1px solid #333;
 
-    .logo img {
-      width: 100px;
-      height: auto;
+    .logo {
+      display: block;
+      width: 301px;
+      height: 46px;
+      object-fit: contain;
     }
   }
 

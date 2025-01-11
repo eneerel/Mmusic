@@ -14,7 +14,11 @@ const NavPanel = () => {
       {/* Лого хэсэг */}
       <div className="logo-container">
         <div className="logo">
-          <img src="/image/logo.png" alt="Logo" />
+        <img
+              src={process.env.PUBLIC_URL + "/image/logo.png"}
+              alt="Logo"
+              className="logo-img"
+            /> 
         </div>
       </div>
 
@@ -22,28 +26,55 @@ const NavPanel = () => {
       <ul className={`nav-links ${menuOpen ? "show" : ""}`}>
         <li>
           <Link to="/" className="menu-item active">
-            <span className="icon">🏠</span> Нүүр
+            <span className="icon">
+             <img
+              src={process.env.PUBLIC_URL + "/image/home.png"}
+              alt="Logo"
+              className="logo-img"
+            /> </span> Нүүр
           </Link>
         </li>
         <li>
           <Link to="/search" className="menu-item">
-            <span className="icon">🔍</span> Хайх
+            <span className="icon">
+              <img
+              src={process.env.PUBLIC_URL + "/image/search.png"}
+              alt="Logo"
+              className="logo-img"
+            />  
+            </span> Хайх
           </Link>
         </li>
         <h4>Миний сан</h4>
         <li>
           <Link to="/recently-played" className="menu-item">
-            <span className="icon">🔄</span> Сүүлд сонссон
+            <span className="icon">
+             <img
+              src={process.env.PUBLIC_URL + "/image/Recent.png"}
+              alt="Logo"
+              className="logo-img"
+            /> </span> Сүүлд сонссон
           </Link>
         </li>
         <li>
           <Link to="/favorites" className="menu-item">
-            <span className="icon">❤️</span> Дуртай
+            <span className="icon"> 
+            <img
+              src={process.env.PUBLIC_URL + "/image/fav.png"}
+              alt="Logo"
+              className="logo-img"
+            /> </span> Дуртай
           </Link>
         </li>
         <li>
           <Link to="/mix" className="menu-item">
-            <span className="icon">🎛</span> Микс үүсгэх
+            <span className="icon">
+            <img
+              src={process.env.PUBLIC_URL + "/image/plus-circle.png"}
+              alt="Logo"
+              className="logo-img"
+            /> 
+            </span> Микс үүсгэх
           </Link>
         </li>
         <div>
@@ -51,12 +82,24 @@ const NavPanel = () => {
         </div>
         <li>
           <Link to="/playlist" className="menu-item">
-            <span className="icon">🎵</span> Муугүй лист
+            <span className="icon">
+            <img
+              src={process.env.PUBLIC_URL + "/image/mylistimg.png"}
+              alt="Logo"
+              className="logo-img"
+            /> 
+            </span> Муугүй лист
           </Link>
         </li>
         <li>
           <Link to="/beautiful-songs" className="menu-item">
-            <span className="icon">✨</span> Гоё дуунууд
+            <span className="icon">
+            <img
+              src={process.env.PUBLIC_URL + "/image/listimg.png"}
+              alt="Logo"
+              className="logo-img"
+            /> 
+            </span> Гоё дуунууд
           </Link>
         </li>
       </ul>
