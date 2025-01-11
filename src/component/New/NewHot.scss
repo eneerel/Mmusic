@@ -1,45 +1,31 @@
-.container {
-  width: 100%;
-  max-width: 1000px; /* Desktop дээр хамгийн их өргөн */
-  margin: 0 auto;
-  display: flex; 
-  flex-direction: column;
-  
-}
-
-.highlight-image {
-  margin-bottom: 20px; /* Шаардлагатай зай */
-}
-
-.highlight-img {
-  width: 100%;
-  max-width: 1366px; /* Desktop дээр хамгийн их өргөн */
-  height: auto; /* Зургийн өндөр автоматаар тохируулах */
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
 .new-hot {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 24px; 
-  width: 100%; 
-  padding-top: 1rem;
+  flex-wrap: nowrap; 
+  justify-content: flex-start;
+  overflow-x: auto;
+  gap: 16px;
+  padding: 10px 0;
+  scrollbar-width: thin;
+}
+
+.new-hot::-webkit-scrollbar {
+  height: 8px;
+}
+
+.new-hot::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 4px; 
 }
 
 .newhot-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: calc(20% - 24px);
-  height: 237px;
+  flex: 0 0 auto; 
+  width: 80%; 
+  max-width: 200px;
 }
 
 .new-hot-img {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -47,56 +33,11 @@
 }
 
 .new-hot-img:hover {
-  transform: scale(1.05); 
-}
-
-hr {
-  display: block;
-  width: 100%;
-  border: 1px solid #ccc;
-  margin: 10px 0;
-}
-
-/* Tablet болон Mobile-д зориулсан зохицуулалт */
-@media (max-width: 1024px) {
-  .highlight-image {
-    margin-bottom: 15px; /* Зайг багасгана */
-  }
-
-  .highlight-img {
-    width: 100%;
-    height: auto; /* Зургийн өндөр автоматаар тохирно */
-  }
-
-  .new-hot {
-    justify-content: flex-start; /* Жагсаалтын зөв байрлал */
-    overflow-x: auto; /* Зургууд хажуу тийш гулсах боломжтой */
-    padding-bottom: 10px;
-  }
-
-  .newhot-item {
-    width: 45%; /* Хэмжээг 45%-д тохируулах */
-    max-width: 150px; /* Хэт том болохоос сэргийлэх */
-  }
+  transform: scale(1.05);
 }
 
 @media (max-width: 600px) {
-  .highlight-image {
-    margin-bottom: 10px; /* Гар утасны дэлгэцэд тохируулсан зай */
-  }
-
-  .highlight-img {
-    width: 100%;
-    height: auto; /* Зургуудыг дэлгэцэнд багтаана */
-  }
-
-  .new-hot {
-    flex-direction: column; /* Бүх элементүүдийг нэг багана болгох */
-    gap: 16px; /* Зайг багасгах */
-  }
-
   .newhot-item {
-    width: 100%; /* Нэг мөрөнд бүрэн байрлана */
-    max-width: none; /* Хэмжээг хязгаарлахгүй */
+    width: 75%;
   }
 }

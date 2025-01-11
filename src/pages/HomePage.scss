@@ -1,49 +1,26 @@
 .home-page {
   display: flex;
   flex-direction: column;
-  padding: 100px 20px 0 280px; /* Дээд болон зүүн талаас зай авах */
+  padding: 100px 20px 0 280px; /* Default padding */
   color: #fff;
   box-sizing: border-box;
-  flex-grow: 1; /* Үлдсэн зайг дүүргэх */
-  overflow-y: auto; /* Босоо скролл нэмэх */
-  max-height: calc(100vh - 100px); /* Харагдах хэсгийг 100px дээд зайтай болгож тохируулах */
-}
+  flex-grow: 1;
+  overflow-y: auto; /* Босоо гүйлгэх боломжтой болгох */
+  max-height: calc(100vh - 100px); /* Үзэгдэх дээд хэсгийн зайг тохируулах */
 
-.main-content {
-  display: flex;
-  flex-direction: column;
-  gap: 32px; /* Элементүүдийн хооронд зай */
-}
-
-@media (max-width: 1024px) {
-  .home-page {
-    padding: 100px 20px 0 20px; /* Зүүн болон баруун талаас 20px зай */
-    max-height: calc(100vh - 80px); /* Таг баруун болон доор зай бага байх */
+  @media (max-width: 1024px) {
+    padding: 100px 20px 0; /* Зүүн талаас илүү их зайг хасна */
+    max-height: calc(100vh - 80px); /* Харагдах хэсгийг багасгах */
   }
 
-  .main-content {
-    gap: 20px; /* Элементүүдийн хооронд зайг багасгах */
+  @media (max-width: 768px) {
+    padding: 80px 20px 0; /* Дэлгэц жижиг болох үед тохируулна */
+    max-height: calc(100vh - 60px); 
+  }
+
+  @media (max-width: 480px) {
+    padding: 60px 20px 0; /* Гар утасны дэлгэцэнд тохируулах */
+    max-height: calc(100vh - 50px); 
   }
 }
 
-@media (max-width: 768px) {
-  .home-page {
-    padding: 80px 20px 0 20px; /* Зүүн болон баруун талаас 20px зай */
-    max-height: calc(100vh - 60px); /* Зөв зохицуулах */
-  }
-
-  .main-content {
-    gap: 16px; /* Элементүүдийн хооронд зайг дахин багаас тохируулах */
-  }
-}
-
-@media (max-width: 480px) {
-  .home-page {
-    padding: 60px 20px 0 20px; /* Зүүн болон баруун талаас 20px зай */
-    max-height: calc(100vh - 50px); /* Дээд талын зайг багасгах */
-  }
-
-  .main-content {
-    gap: 12px; /* Элементүүдийн хооронд зайг дахин тохируулах */
-  }
-}

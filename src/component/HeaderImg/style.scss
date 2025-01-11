@@ -1,0 +1,32 @@
+.container {
+    padding: 20px; /* Дотор ирмэгийн зай */
+    display: flex;
+    justify-content: center; /* Контейнерийг голлуулж байрлуулах */
+  }
+  
+  .highlightimage {
+    width: 100%; /* Контейнерийн өргөнтэй тэнцүү */
+    max-width: 1200px; /* Хэт том дэлгэцэнд хамгийн их өргөн */
+    overflow: hidden; /* Зурагны ирмэгийг далдлах */
+  }
+  
+  .highlight-img {
+    width: 100%; /* Контейнерийн өргөнд тааруулна */
+    height: auto; /* Харьцааг автоматаар хадгална */
+    object-fit: cover; /* Зургийг контейнерт багтааж дүүргэнэ */
+    display: block; /* Зургийг блок элемент болгоно */
+  }
+  
+  /* Responsive тохиргоо */
+  @media (max-width: 1024px) {
+    .highlightimage {
+      max-width: 900px; /* Дунд дэлгэцэд хамгийн их өргөн */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .highlightimage {
+      max-width: 600px; /* Гар утасны дэлгэцэнд хамгийн их өргөн */
+    }
+  }
+  

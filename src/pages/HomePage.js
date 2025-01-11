@@ -8,10 +8,12 @@ import SelectedSongType from "../component/Type";
 import MoodMix from "../component/MoodMix";
 import MusicMix from "../component/MMix";
 import Suggest from "../component/ToSuggest";
+import HighlightImg from "../component/HeaderImg";
 const HomePage = () => {
   return (
     <div className="home-page">
       <main className="main-content">
+      <HighlightImg/>
         <NewHot />
         <RecentlyAdded />
         <NewArtist/>

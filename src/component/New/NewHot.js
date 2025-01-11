@@ -11,12 +11,6 @@ const newhot = [
 const NewHot = () => {
   return (
     <div className="container">
-     <div className="highlight-image">
-        <img src={process.env.PUBLIC_URL + "/image/b1.png"}
-          alt="Highlight Image"
-          className="highlight-img"
-        />
-      </div>
     <div>
      <h2>New Hot</h2>
      <hr/>
